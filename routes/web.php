@@ -3,6 +3,7 @@
 use App\Http\Controllers\CountriesController;
 use App\Http\Controllers\StatesCountroller;
 use App\Http\Controllers\TaskController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,8 +17,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Artisan::call('migrate');
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('iveri');
 });
 
 
@@ -25,3 +28,18 @@ Route::resource('task', TaskController::class);
 Route::get('/fetch/tasks', [TaskController::class, 'fetch'])->name('tasks.fetch');
 Route::resource('countries', CountriesController::class);
 Route::resource('states', StatesCountroller::class);
+Route::get('/fail', function () {
+    return view('fail');
+});
+Route::post('/fail', function () {
+});
+Route::get('/success', function () {
+    return view('success');
+});
+
+Route::get('/test', function () {
+    return view('test');
+});
+Route::get('/iveri', function () {
+    return view('lite');
+});

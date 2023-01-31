@@ -2261,6 +2261,305 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/iveri/TestComponent.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/iveri/TestComponent.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: [],
+  components: {},
+  data: function data() {
+    return {
+      Ecom_BillTo_Postal_Name_Prefix: "Mr",
+      Ecom_BillTo_Postal_Name_First: "Romano",
+      Ecom_BillTo_Online_Email: "johndoe@gmail.com",
+      Ecom_ConsumerOrderID: "AUTOGENERATE",
+      Ecom_SchemaVersion: "",
+      Ecom_TransactionComplete: false,
+      Lite_Authorisation: false,
+      Lite_Version: 2.0,
+      Lite_Order_LineItems_Product_1: "Example Product#1",
+      Lite_Order_LineItems_Quantity_1: 1,
+      Transaction_LineItems_Amount_1: 10.0,
+      Lite_Order_LineItems_Amount_1: 10.0,
+      Transaction_Amount: 10.0,
+      Merchant_ApplicationID: "{91D8E818-9FC9-4080-8A40-2B50858E7881}",
+      Lite_Merchant_ApplicationID: "",
+      Lite_Order_Terminal: "77777001",
+      Lite_Order_AuthorisationCode: "",
+      Lite_Website_TextColor: "#ffffff",
+      Lite_Website_BGColor: "#1C4231",
+      Lite_ConsumerOrderID_PreFix: "LITE",
+      Lite_Website_Successful_Url: "http://127.0.0.1:8000/success",
+      Lite_Website_Fail_Url: "http://127.0.0.1:8000/fail",
+      Lite_Website_Error_Url: "http://127.0.0.1:8000/fail",
+      Lite_Website_Trylater_Url: "http://127.0.0.1:8000/fail",
+      Ecom_Payment_Card_Protocols: "iVeri"
+    };
+  },
+  mounted: function mounted() {
+    liteboxInitialise("https://portal.host.iveri.com/scripts/jquery/js/jquery.litebox.js");
+
+    function liteboxComplete(data) {
+      console.log(data);
+      axios.post("https://portal.host.iveri.com/Lite/Result.asp", data);
+    }
+  },
+  methods: {
+    submit: function submit() {
+      var data = {
+        Ecom_BillTo_Postal_Name_Prefix: "Mr",
+        Ecom_BillTo_Postal_Name_First: "Romano",
+        Ecom_BillTo_Online_Email: "johndoe@gmail.com",
+        Ecom_ConsumerOrderID: "AUTOGENERATE",
+        Ecom_SchemaVersion: "",
+        Ecom_TransactionComplete: false,
+        Lite_Authorisation: false,
+        Lite_Version: 2.0,
+        Lite_Order_LineItems_Product_1: "Example Product#1",
+        Lite_Order_LineItems_Quantity_1: 1,
+        Transaction_LineItems_Amount_1: 10.0,
+        Lite_Order_LineItems_Amount_1: 10.0,
+        Transaction_Amount: 10.0,
+        Merchant_ApplicationID: "{91D8E818-9FC9-4080-8A40-2B50858E7881}",
+        Lite_Merchant_ApplicationID: "",
+        Lite_Order_Terminal: "77777001",
+        Lite_Order_AuthorisationCode: "",
+        Lite_Website_TextColor: "#ffffff",
+        Lite_Website_BGColor: "#1C4231",
+        Lite_ConsumerOrderID_PreFix: "LITE",
+        Lite_Website_Successful_Url: "http://127.0.0.1:8000/success",
+        Lite_Website_Fail_Url: "http://127.0.0.1:8000/fail",
+        Lite_Website_Error_Url: "http://127.0.0.1:8000/fail",
+        Lite_Website_Trylater_Url: "http://127.0.0.1:8000/fail",
+        Ecom_Payment_Card_Protocols: "iVeri"
+      };
+      var config = {
+        headers: {
+          "Access-Control-Allow-Origin": "*"
+        }
+      };
+      axios.post("https://portal.host.iveri.com/Lite/Authorise.aspx", data, {
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+        }
+      }).then(function (res) {
+        console.log(res.data);
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/tasks/TaskComponent.vue?vue&type=script&lang=js&":
 /*!******************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/tasks/TaskComponent.vue?vue&type=script&lang=js& ***!
@@ -3096,6 +3395,682 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
                          (this && this.clearImmediate);
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/iveri/TestComponent.vue?vue&type=template&id=5e5b53f0&":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/iveri/TestComponent.vue?vue&type=template&id=5e5b53f0& ***!
+  \**********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("div", { staticClass: "container" }, [
+      _c("br"),
+      _vm._v(" "),
+      _c("br"),
+      _vm._v(" "),
+      _c("div", { attrs: { id: "iveri-litebox" } }),
+      _vm._v(" "),
+      _c(
+        "form",
+        {
+          attrs: { name: "Form1", id: "Form1" },
+          on: {
+            submit: function ($event) {
+              $event.preventDefault()
+              return _vm.submit()
+            },
+          },
+        },
+        [
+          _c("h3", [_vm._v("Confirm Details")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c("label", { attrs: { for: "" } }, [_vm._v("Name")]),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Ecom_BillTo_Postal_Name_Prefix,
+                  expression: "Ecom_BillTo_Postal_Name_Prefix",
+                },
+              ],
+              staticClass: "clsInputReadOnlyText form-control",
+              staticStyle: { width: "30px" },
+              attrs: { type: "text", id: "Ecom_BillTo_Postal_Name_Prefix" },
+              domProps: { value: _vm.Ecom_BillTo_Postal_Name_Prefix },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Ecom_BillTo_Postal_Name_Prefix = $event.target.value
+                },
+              },
+            }),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Ecom_BillTo_Postal_Name_First,
+                  expression: "Ecom_BillTo_Postal_Name_First",
+                },
+              ],
+              staticClass: "clsInputReadOnlyText form-control",
+              staticStyle: { width: "100px" },
+              attrs: { type: "text", id: "Ecom_BillTo_Postal_Name_First" },
+              domProps: { value: _vm.Ecom_BillTo_Postal_Name_First },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Ecom_BillTo_Postal_Name_First = $event.target.value
+                },
+              },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c("label", { attrs: { for: "Email" } }, [_vm._v("Email")]),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Ecom_BillTo_Online_Email,
+                  expression: "Ecom_BillTo_Online_Email",
+                },
+              ],
+              staticClass: "clsInputReadOnlyText form-control",
+              attrs: {
+                readonly: "readonly",
+                type: "text",
+                maxlength: "50",
+                id: "Ecom_BillTo_Online_Email",
+              },
+              domProps: { value: _vm.Ecom_BillTo_Online_Email },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Ecom_BillTo_Online_Email = $event.target.value
+                },
+              },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c("label", { attrs: { for: "" } }, [
+              _vm._v(" Merchant Reference:"),
+            ]),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Ecom_ConsumerOrderID,
+                  expression: "Ecom_ConsumerOrderID",
+                },
+              ],
+              staticClass: "form-control clsInputReadOnlyText",
+              attrs: {
+                readonly: "readonly",
+                type: "text",
+                maxlength: "20",
+                id: "Ecom_ConsumerOrderID",
+              },
+              domProps: { value: _vm.Ecom_ConsumerOrderID },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Ecom_ConsumerOrderID = $event.target.value
+                },
+              },
+            }),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Ecom_SchemaVersion,
+                  expression: "Ecom_SchemaVersion",
+                },
+              ],
+              attrs: { type: "hidden", id: "Ecom_SchemaVersion" },
+              domProps: { value: _vm.Ecom_SchemaVersion },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Ecom_SchemaVersion = $event.target.value
+                },
+              },
+            }),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Ecom_TransactionComplete,
+                  expression: "Ecom_TransactionComplete",
+                },
+              ],
+              attrs: { type: "hidden", id: "Ecom_TransactionComplete" },
+              domProps: { value: _vm.Ecom_TransactionComplete },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Ecom_TransactionComplete = $event.target.value
+                },
+              },
+            }),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Lite_Authorisation,
+                  expression: "Lite_Authorisation",
+                },
+              ],
+              attrs: { type: "hidden", id: "Lite_Authorisation" },
+              domProps: { value: _vm.Lite_Authorisation },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Lite_Authorisation = $event.target.value
+                },
+              },
+            }),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Lite_Version,
+                  expression: "Lite_Version",
+                },
+              ],
+              attrs: { type: "hidden", id: "Lite_Version" },
+              domProps: { value: _vm.Lite_Version },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Lite_Version = $event.target.value
+                },
+              },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Lite_Order_LineItems_Product_1,
+                  expression: "Lite_Order_LineItems_Product_1",
+                },
+              ],
+              staticClass: "clsInputReadOnlyText form-control",
+              attrs: {
+                type: "text",
+                readonly: "readonly",
+                id: "Lite_Order_LineItems_Product_1",
+              },
+              domProps: { value: _vm.Lite_Order_LineItems_Product_1 },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Lite_Order_LineItems_Product_1 = $event.target.value
+                },
+              },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Lite_Order_LineItems_Quantity_1,
+                  expression: "Lite_Order_LineItems_Quantity_1",
+                },
+              ],
+              staticClass: "clsInputReadOnlyText form-control",
+              attrs: {
+                type: "text",
+                readonly: "readonly",
+                id: "Lite_Order_LineItems_Quantity_1",
+                value: "1",
+              },
+              domProps: { value: _vm.Lite_Order_LineItems_Quantity_1 },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Lite_Order_LineItems_Quantity_1 = $event.target.value
+                },
+              },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Transaction_LineItems_Amount_1,
+                  expression: "Transaction_LineItems_Amount_1",
+                },
+              ],
+              staticClass: "clsInputReadOnlyText form-control",
+              attrs: {
+                type: "text",
+                readonly: "readonly",
+                id: "Transaction_LineItems_Amount_1",
+              },
+              domProps: { value: _vm.Transaction_LineItems_Amount_1 },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Transaction_LineItems_Amount_1 = $event.target.value
+                },
+              },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Lite_Order_LineItems_Amount_1,
+                  expression: "Lite_Order_LineItems_Amount_1",
+                },
+              ],
+              attrs: { type: "hidden", id: "Lite_Order_LineItems_Amount_1" },
+              domProps: { value: _vm.Lite_Order_LineItems_Amount_1 },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Lite_Order_LineItems_Amount_1 = $event.target.value
+                },
+              },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c("label", { attrs: { for: "" } }, [
+              _vm._v(" Total Order Amount:"),
+            ]),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Transaction_Amount,
+                  expression: "Transaction_Amount",
+                },
+              ],
+              staticClass: "clsInputText",
+              staticStyle: { width: "75px" },
+              attrs: {
+                id: "Transaction_Amount",
+                type: "text",
+                maxlength: "10",
+              },
+              domProps: { value: _vm.Transaction_Amount },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Transaction_Amount = $event.target.value
+                },
+              },
+            }),
+            _vm._v(" "),
+            _c("input", {
+              attrs: {
+                type: "text",
+                name: "Lite_Order_Amount",
+                id: "Lite_Order_Amount",
+              },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c("label", { attrs: { for: "" } }, [
+              _vm._v("Merchant Application ID"),
+            ]),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Merchant_ApplicationID,
+                  expression: "Merchant_ApplicationID",
+                },
+              ],
+              staticClass: "clsInputText",
+              staticStyle: { width: "230px" },
+              attrs: {
+                type: "text",
+                maxlength: "40",
+                id: "Merchant_ApplicationID",
+              },
+              domProps: { value: _vm.Merchant_ApplicationID },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Merchant_ApplicationID = $event.target.value
+                },
+              },
+            }),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Lite_Merchant_ApplicationID,
+                  expression: "Lite_Merchant_ApplicationID",
+                },
+              ],
+              attrs: { type: "hidden", id: "Lite_Merchant_ApplicationID" },
+              domProps: { value: _vm.Lite_Merchant_ApplicationID },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Lite_Merchant_ApplicationID = $event.target.value
+                },
+              },
+            }),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Lite_Order_Terminal,
+                  expression: "Lite_Order_Terminal",
+                },
+              ],
+              attrs: { type: "hidden", id: "Lite_Order_Terminal" },
+              domProps: { value: _vm.Lite_Order_Terminal },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Lite_Order_Terminal = $event.target.value
+                },
+              },
+            }),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Lite_Order_AuthorisationCode,
+                  expression: "Lite_Order_AuthorisationCode",
+                },
+              ],
+              attrs: { type: "hidden", id: "Lite_Order_AuthorisationCode" },
+              domProps: { value: _vm.Lite_Order_AuthorisationCode },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Lite_Order_AuthorisationCode = $event.target.value
+                },
+              },
+            }),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Lite_Website_TextColor,
+                  expression: "Lite_Website_TextColor",
+                },
+              ],
+              attrs: { type: "hidden", id: "Lite_Website_TextColor" },
+              domProps: { value: _vm.Lite_Website_TextColor },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Lite_Website_TextColor = $event.target.value
+                },
+              },
+            }),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Lite_Website_BGColor,
+                  expression: "Lite_Website_BGColor",
+                },
+              ],
+              attrs: { type: "hidden", id: "Lite_Website_BGColor" },
+              domProps: { value: _vm.Lite_Website_BGColor },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Lite_Website_BGColor = $event.target.value
+                },
+              },
+            }),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Lite_ConsumerOrderID_PreFix,
+                  expression: "Lite_ConsumerOrderID_PreFix",
+                },
+              ],
+              attrs: { type: "hidden", id: "Lite_ConsumerOrderID_PreFix" },
+              domProps: { value: _vm.Lite_ConsumerOrderID_PreFix },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Lite_ConsumerOrderID_PreFix = $event.target.value
+                },
+              },
+            }),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Lite_Website_Successful_Url,
+                  expression: "Lite_Website_Successful_Url",
+                },
+              ],
+              attrs: { type: "hidden", id: "Lite_Website_Successful_Url" },
+              domProps: { value: _vm.Lite_Website_Successful_Url },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Lite_Website_Successful_Url = $event.target.value
+                },
+              },
+            }),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Lite_Website_Fail_Url,
+                  expression: "Lite_Website_Fail_Url",
+                },
+              ],
+              attrs: { type: "hidden", id: "Lite_Website_Fail_Url" },
+              domProps: { value: _vm.Lite_Website_Fail_Url },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Lite_Website_Fail_Url = $event.target.value
+                },
+              },
+            }),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Lite_Website_Error_Url,
+                  expression: "Lite_Website_Error_Url",
+                },
+              ],
+              attrs: { type: "hidden", id: "Lite_Website_Error_Url" },
+              domProps: { value: _vm.Lite_Website_Error_Url },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Lite_Website_Error_Url = $event.target.value
+                },
+              },
+            }),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Lite_Website_Trylater_Url,
+                  expression: "Lite_Website_Trylater_Url",
+                },
+              ],
+              attrs: { type: "hidden", id: "Lite_Website_Trylater_Url" },
+              domProps: { value: _vm.Lite_Website_Trylater_Url },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Lite_Website_Trylater_Url = $event.target.value
+                },
+              },
+            }),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.Ecom_Payment_Card_Protocols,
+                  expression: "Ecom_Payment_Card_Protocols",
+                },
+              ],
+              attrs: { type: "hidden", id: "Ecom_Payment_Card_Protocols" },
+              domProps: { value: _vm.Ecom_Payment_Card_Protocols },
+              on: {
+                input: function ($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.Ecom_Payment_Card_Protocols = $event.target.value
+                },
+              },
+            }),
+          ]),
+          _vm._v(" "),
+          _vm._m(0),
+        ]
+      ),
+    ]),
+  ])
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group" }, [
+      _c("input", {
+        staticClass: "clsInputSubmit",
+        staticStyle: { width: "75px" },
+        attrs: { type: "submit", name: "buttonSubmit", value: "Submit" },
+      }),
+    ])
+  },
+]
+render._withStripped = true
+
+
 
 /***/ }),
 
@@ -15937,9 +16912,79 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('task-component', __webpack_require__(/*! ./components/tasks/TaskComponent.vue */ "./resources/js/components/tasks/TaskComponent.vue")["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('test-component', __webpack_require__(/*! ./components/iveri/TestComponent.vue */ "./resources/js/components/iveri/TestComponent.vue")["default"]);
 var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: "#vue-app"
 });
+
+/***/ }),
+
+/***/ "./resources/js/components/iveri/TestComponent.vue":
+/*!*********************************************************!*\
+  !*** ./resources/js/components/iveri/TestComponent.vue ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _TestComponent_vue_vue_type_template_id_5e5b53f0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TestComponent.vue?vue&type=template&id=5e5b53f0& */ "./resources/js/components/iveri/TestComponent.vue?vue&type=template&id=5e5b53f0&");
+/* harmony import */ var _TestComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TestComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/iveri/TestComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _TestComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _TestComponent_vue_vue_type_template_id_5e5b53f0___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _TestComponent_vue_vue_type_template_id_5e5b53f0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/iveri/TestComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/iveri/TestComponent.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/components/iveri/TestComponent.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TestComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./TestComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/iveri/TestComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TestComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/iveri/TestComponent.vue?vue&type=template&id=5e5b53f0&":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/components/iveri/TestComponent.vue?vue&type=template&id=5e5b53f0& ***!
+  \****************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TestComponent_vue_vue_type_template_id_5e5b53f0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./TestComponent.vue?vue&type=template&id=5e5b53f0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/iveri/TestComponent.vue?vue&type=template&id=5e5b53f0&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TestComponent_vue_vue_type_template_id_5e5b53f0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TestComponent_vue_vue_type_template_id_5e5b53f0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 
